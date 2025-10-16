@@ -148,6 +148,37 @@ export const config: VendureConfig = {
         ],
         nullable: true,
       },
+      {
+        name: 'PanNumber',
+        type: 'string',
+        label: [{ languageCode: LanguageCode.en, value: 'PAN NUMBER' }],
+        nullable: true,
+      },
+      {
+      name: 'Occupation',
+      type: 'string',
+      label: [{ languageCode: LanguageCode.en, value: 'Occupation' }],
+      options: [
+            { value: 'farmer', label: [{ languageCode: LanguageCode.en, value: 'Farmer' }] },
+            { value: 'salaried', label: [{ languageCode: LanguageCode.en, value: 'Salaried' }] },
+            { value: 'self-employed-business', label: [{ languageCode: LanguageCode.en, value: 'Self Employed (Business)' }] },
+            { value: 'self-employed-professional', label: [{ languageCode: LanguageCode.en, value: 'Self Employed (Professional)' }] },
+        ],
+      nullable: true,
+},
+{
+        name: 'AlternateNumber',
+        type: 'string',
+        label: [{ languageCode: LanguageCode.en, value: 'Alternate Number' }],
+        nullable: true,
+      },
+      {
+        name: 'CibilScore',
+        type: 'string',
+        label: [{ languageCode: LanguageCode.en, value: 'Cibil Score' }],
+        nullable: true,
+      }
+
     ],
   },
 
