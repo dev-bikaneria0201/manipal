@@ -177,6 +177,12 @@ export const config: VendureConfig = {
         type: 'string',
         label: [{ languageCode: LanguageCode.en, value: 'Cibil Score' }],
         nullable: true,
+      },
+      {
+        name: 'OrderId',
+        type: 'string',
+        label: [{ languageCode: LanguageCode.en, value: 'Order ID' }],
+        nullable: true,
       }
 
     ],
